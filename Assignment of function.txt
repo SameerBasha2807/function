@@ -1,0 +1,90 @@
+Assignment 1
+
+1)
+ def is the keyword used to create a function
+
+def test8():
+    a=[]
+    for i in range(1,26) :
+        if i % 2 != 0:
+            a.append(i)
+    return a
+            
+2)
+args and kwargs are used when we don't know how many arguments to be passed
+def test10(*args):
+    return args
+test10()
+
+3)
+iterator is a object that can be iterated
+l = [2,4,6,8,10,12,14,16,18,20]
+m = iter(l)
+for i in range(5)
+    n = next(m)
+    print(n)
+
+4)
+generator function is used to reduce the storage
+yield key word is used to return the value
+def fib(n):
+    a,b=0,1
+    for i in range(n):
+        yield a
+        a,b=b,a+b
+            
+for i in range(10):
+    print(i)
+
+5)
+
+def prime(n):
+    if n<=1:
+        for i in range(2,n**0.5):
+            if n%i==0:
+                return False
+        return True
+
+def test():
+    n= 2
+    c=0
+    while c<20:
+        if prime(n):
+            yield n
+            c=c+1
+        n=n+1
+a = test()
+for i in range(20):
+    print(next(a))
+6)
+n=10
+l=[]
+a,b=0,1
+while len(l)<n:
+    l.append(a)
+    a,b=b,a+b
+print(l)
+7)
+l = "pwskills"
+list(l)
+8)
+n = int(input("Enter a number"))
+temp = n
+rev=0
+while n!=0:
+    rev = rev*10 + n%10
+    n = n//10
+if temp == rev:
+        print("YES")
+else:
+        print("NO")
+
+9)
+l=[]
+l1=[]
+for i in range(1,100):
+    l.append(i)
+    if i%2!=0:
+        l1.append(i)
+
+ 
