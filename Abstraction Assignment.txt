@@ -1,0 +1,67 @@
+1)
+
+Abstraction is defined as only giving abstract details but not telling the implementation details of the program 
+import abc
+
+class Sameer(abc.ABC):
+    @abc.abstractmethod
+    def test1(self):
+        pass
+
+class Test(Sameer):
+    def test1(self):
+        return "I am Sameer"
+
+sd = Test()
+result = sd.test()
+print(result)
+
+2)
+
+Abstraction is defined as only giving abstract details but not telling the implementation details of the program 
+Encapsulation is defined as binding the data members and member function
+Abstraction:
+
+import abc
+
+class Sameer(abc.ABC):
+    @abc.abstractmethod
+    def test1(self):
+        pass
+
+class Test(Sameer):
+    def test1(self):
+        return "I am Sameer"
+
+sd = Test()
+result = sd.test()
+print(result)
+
+class Test:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+
+t = Test(2, 3)
+t.a = 235  
+
+3)
+abc is package that is imported before writing the program above the class name
+It contains abstract method
+abc is used to abstract the details 
+The 'abc' module in the Python library provides the infrastructure for defining custom abstract base classes.
+ 
+4)
+
+In Python abstraction can be achieved by using abstract classes and methods in programs
+An abstract method is a method that is declared, but does not contain implementation. 
+
+5)
+
+In Python we cannot create an instance of an abstract class directly. Abstract classes are meant to be used as blueprints for other classes and are not meant to be instantiated on their own.
+from abc import ABC, abstractmethod
+
+class AbstractClass(ABC):
+    @abstractmethod
+    def abstract_method(self):
+        pass
