@@ -1,0 +1,22 @@
+1)
+l = [('Sachin Tendulkar', 34357), ('Ricky Ponting', 27483), ('Jack Kallis', 25534), ('Virat Kohli', 24936)]
+l.sort(key=lambda x : x[1])
+print(l)
+2)
+l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+list(map(lambda x : x**2,l))
+3)
+l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+tuple(map(lambda x : str(x),l))
+4)
+from functools import reduce
+n = range(1,26)
+m = reduce(lambda x,y : x*y,n)
+print(m)
+5)
+l = [2, 3, 6, 9, 27, 60, 90, 120, 55, 46]
+n=list(map(lambda x : x%2==0 and x%3==0,l))
+print(n)
+6)
+l = ['python', 'php', 'aba', 'radar', 'level']
+list(filter(lambda l : print("Palindrome ") if l[:]==l[::-1] else print("Not Palindrome") ,l ))
