@@ -1,0 +1,111 @@
+1)
+class PW:
+    def test(self):
+        return 'Hello Sameer'
+
+Sameer = PW()
+result = Sameer.test() 
+print(result)
+
+
+2)
+i) abstraction
+ii) inheritance 
+iii) encapsulation 
+iv) polymorphism 
+
+3)
+__init__ is nothing but the initialisation 
+__init__ is a constructor
+__init __ is used to get the data from the user 
+Program:
+
+class Sameer:
+    def __init__(self, name, rollnumber):
+        self.name = name
+        self.rollnumber = rollnumber
+
+    def student(self):
+        return self.name, self.rollnumber
+
+PW = Sameer("Sameer", 502)
+result = PW.student()  
+print(result)
+
+4)
+
+Self is used as pointer in python 
+Self is a reference to current instance of class
+We have seen the usage of self in the above
+It is not necessary that we have to use self only,self is not a reserved keyword .self can be anything it may be our name also 
+Self is used to bind the data.
+When we want to access class we use self .
+
+5)
+Ability to derive new class from Already existing class is called inheritance
+There are five types of inheritance
+• single inheritance 
+•multi level inheritance 
+• hierarchical inheritance 
+•multiple inheritance 
+• hybrid inheritance
+
+Example
+**Single level inheritance
+
+class Single:
+    def test1(self):
+        return "This is my single inheritance"
+
+class Child(Single):
+    child_obj = Child()
+    result = child_obj.test()
+**Multi level 
+class Multi:
+    def test(self):
+        return "This multi-level inheritance"
+
+class Parent(Multi):
+    parent_obj = Parent()
+    result = parent_obj.test()
+
+class Child(Multi):
+    child_obj = Child()
+    result = child_obj.test()
+**Hierarchial
+class Class1:
+    @staticmethod
+    def test():
+        return "This is Sameer"
+
+class Class2:
+    @staticmethod
+    def test2():
+        return "I am from CSE"
+
+class Class3:
+    @staticmethod
+    def test3():
+        pass
+
+obj = Class3()
+result1 = Class1.test()
+result2 = Class2.test2()
+**Multiple inheritance
+Class class1:
+   def test():
+   return " This is Sameer"
+Class class2:
+    def test2():
+     return " I am from CSE"
+Class class3:
+     def test3():
+     Pass
+Obj=class3()
+Obj.class1()
+Obj.class2()
+**Hybrid inheritance: it very simple that it is combination of hierarchical and multiple inheritance
+
+
+
+
