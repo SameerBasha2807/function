@@ -1,4 +1,10 @@
 1)
+The programming paradigm that is based on objects is called object oriented programming 
+Class is defined as the blueprint of the object
+Class is also defined as the collection of objects
+Class is a keyword
+Object is defined as the collection of data members and member function 
+Object is also defined as instance of class
 class PW:
     def test(self):
         return 'Hello Sameer'
