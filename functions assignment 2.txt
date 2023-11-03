@@ -4,10 +4,12 @@ l.sort(key=lambda x : x[1])
 print(l)
 2)
 l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-list(map(lambda x : x**2,l))
+l1 = list(map(lambda x : x**2,l))
+print(l1)
 3)
 l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-tuple(map(lambda x : str(x),l))
+L1 = tuple(map(lambda x : str(x),l))
+print(l1)
 4)
 from functools import reduce
 n = range(1,26)
